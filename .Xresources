@@ -1,0 +1,45 @@
+!! URxvt Appearance
+URxvt.font: xft:Hack:size=12:style=Regular
+URxvt.boldFont: xft:Hack:size=12:style=Bold
+
+URxvt.scrollBar: false
+
+!! COLORS
+
+! special
+*.foreground:   #ffa7e2
+*.background:   #080211
+*.cursorColor:  #ffa7e2
+
+! black
+*.color0:       #0e0116
+*.color8:       #d700a9
+
+! red
+*.color1:       #e51297
+*.color9:       #b60080
+
+! green
+*.color2:       #9101e6
+*.color10:      #5f0097
+
+! yellow
+*.color3:       #ff71f9
+*.color11:      #dd15ec
+
+! blue
+*.color4:       #c213d4
+*.color12:      #8800a7
+
+! magenta
+*.color5:       #ff00e7
+*.color13:      #d900b9
+
+! cyan
+*.color6:       #9e2ee8
+*.color14:      #8203bb
+
+! white
+*.color7:       #fd82da
+*.color15:      #f7bee8
+
