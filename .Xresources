@@ -20,8 +20,8 @@ URxvt.scrollBar: false
 *.color9:       #b60080
 
 ! green
-*.color2:       #9101e6
-*.color10:      #5f0097
+*.color2:       #be62f4
+*.color10:      #9f3dd8
 
 ! yellow
 *.color3:       #ff71f9
@@ -36,8 +36,8 @@ URxvt.scrollBar: false
 *.color13:      #d900b9
 
 ! cyan
-*.color6:       #9e2ee8
-*.color14:      #8203bb
+*.color6:       #9c21ee
+*.color14:      #aa22d7
 
 ! white
 *.color7:       #fd82da
