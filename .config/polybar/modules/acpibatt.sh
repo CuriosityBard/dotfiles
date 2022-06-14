@@ -6,7 +6,7 @@
 BATTERY_INFO=($( acpi | awk -F',' '{ print $0 }'))
 
 # format helpers
-CHARGE=$((${BATTERY_INFO[3]//%,/}))
+CHARGE=$((${BATTERY_INFO[3]//%/}))
 ICON=""
 FORMAT=""
 
