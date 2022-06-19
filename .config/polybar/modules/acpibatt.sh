@@ -6,7 +6,13 @@
 BATTERY_INFO=($( acpi | awk -F',' '{ print $0 }'))
 
 # format helpers
-CHARGE=$((${BATTERY_INFO[3]//%/}))
+# for some reason it wigs out at 100% and 99%, so the comma is just for other values
+if [[ ${BATTERY_INFO[3]} == *"100%"* || *"99%"* ]]; then
+    CHARGE=$((${BATTERY_INFO[3]//%/}))
+else    
+    CHARGE=$((${BATTERY_INFO[3]//%,/}))
+fi
+
 ICON=""
 FORMAT=""
 
