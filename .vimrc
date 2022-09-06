@@ -3,11 +3,12 @@ set nocompatible | " must be first line
 " visual settings
 set number
 syntax on
-set tabstop=4
 set autoindent
 set smartindent
 set expandtab
+set tabstop=4
 set softtabstop=4
+set shiftwidth=4
 set cursorline
 set mouse=a
 

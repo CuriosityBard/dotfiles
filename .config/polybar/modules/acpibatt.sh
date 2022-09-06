@@ -1,23 +1,22 @@
 #!/usr/bin/bash
 
 # Original script by Prashant Shrestha 2020-06-23
+# edited by Briar Taggart
 
-# get data and initialize array
-BATTERY_INFO=($( acpi | awk -F',' '{ print $0 }'))
+# get battery level data
+# for some reason the original method for getting this all in one 
+# isn't working on my laptop.
+BATTERY_INFO_A=($( acpi | awk -F', ' '{ print $1 }'))
+BATTERY_INFO_B=($( acpi | awk -F', ' '{ print $2 }'))
 
 # format helpers
-# for some reason it wigs out at 100% and 99%, so the comma is just for other values
-if [[ ${BATTERY_INFO[3]} == *"100%"* || *"99%"* ]]; then
-    CHARGE=$((${BATTERY_INFO[3]//%/}))
-else    
-    CHARGE=$((${BATTERY_INFO[3]//%,/}))
-fi
+CHARGE=$((${BATTERY_INFO_B//%/}))
 
 ICON=""
 FORMAT=""
 
 # format battery icon depending on status
-if [[ "${BATTERY_INFO[2]}" == *"Charging"* ]]; then
+if [[ "${BATTERY_INFO_A}" == *"Battery 0: Charging"* ]]; then
     ICON="🔌"
 else
     ICON="🔋"

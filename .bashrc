@@ -55,7 +55,7 @@ alias myip='curl ipv4.icanhazip.com'
 alias grep='grep --color=auto'
 
 # Set PATH so it includes user's private bin directories
-PATH="${HOME}/bin:${HOME}/.local/bin:${PATH}"
+PATH="${HOME}/.local/share/gem/ruby/3.0.0/bin:${HOME}/bin:${HOME}/.local/bin:${PATH}"
 
 # Set prompt
 PS1="${Yellow}\u@\h${NC}: ${Blue}\w${NC} \\$ "

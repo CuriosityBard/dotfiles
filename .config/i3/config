@@ -258,5 +258,5 @@ gaps outer  4
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # fix background
-exec_always --no-startuo-id feh --bg-tile $HOME/Pictures/Wallpapers/synth1.jpg
+exec_always feh --bg-tile $HOME/Pictures/Wallpapers/synth1.jpg
 
